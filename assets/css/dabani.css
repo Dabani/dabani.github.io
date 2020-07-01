@@ -79,15 +79,18 @@ header {
 }
 
 /* Horizontal menu */
+nav {
+position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 0;
+
+}
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #060;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
 }
 
 li {
