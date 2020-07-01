@@ -362,3 +362,10 @@ dt {
     grid-gap: 0;
   }
 }
+
+footer {
+  background-image: url("../images/bg4.png");
+  background-repeat: repeat;
+  color: white;
+  text-align: center;
+}
