@@ -15,6 +15,10 @@ body {
   padding: 20px;
 }
 
+.top img {
+  max-width: 100%;
+  height: auto;
+}
 .main::after {
   content: "";
   clear: both;
