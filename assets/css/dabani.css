@@ -336,6 +336,7 @@ figure {
 #websites .card-block, #professional .card-block {
   background-image: url("../images/bg4.png");
   color: white;
+  font-size: small;
   padding: 5px;
   min-height: 120px;
 }
