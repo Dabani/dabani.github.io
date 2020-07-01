@@ -185,6 +185,11 @@ li.dropdown {
   font-size: small;
 }
 
+.general ul li ol #contacts {
+  background-image: url("../images/bg4.png");
+  background-color: darkgreen;
+}
+
 .general ul li ol li {
   border-bottom:none;
 }
