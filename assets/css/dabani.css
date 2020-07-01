@@ -11,6 +11,7 @@ body {
 }
 
 .top {
+  background-image: url("../images/bg.png");
   padding: 20px;
 }
 
