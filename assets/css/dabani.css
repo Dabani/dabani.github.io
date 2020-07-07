@@ -347,6 +347,16 @@ figure {
   color: white;
 }
 
+#professional .card-block ul {
+  list-style: none;
+  margin: 0 0 0 -30px;
+}
+
+#professional .card-block ul li ul {
+  list-style: square;
+  margin: 0 0 0 -30px;
+}
+
 dt {
     font-style: italic;
     font-weight: 600;
