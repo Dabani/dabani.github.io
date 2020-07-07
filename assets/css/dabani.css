@@ -5,7 +5,6 @@
 body {
   background-image: url("../images/bg2.png");
   background-repeat: repeat;
-  /* background-color: green; */
   padding: 0;
   margin: 0;
 }
@@ -19,6 +18,7 @@ body {
   max-width: 100%;
   height: auto;
 }
+
 .main::after {
   content: "";
   clear: both;
@@ -46,51 +46,107 @@ header {
   padding: 15px;
 }
 
+
 /* For mobile phones: */
+
 [class*="col-"] {
   width: 100%;
-
 }
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-  .aside {margin: 20px 0;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+  .aside {
+    margin: 20px 0;
+  }
 }
 
-/* Horizontal menu */
-.navbar {
-position: -webkit-sticky; /* Safari */
-position: sticky;
-top: 0;
-z-index: 100;
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
+
+
+/* Horizontal menu */
+
+.navbar {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -103,7 +159,8 @@ li {
   float: left;
 }
 
-li a, .dropbtn {
+li a,
+.dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -111,7 +168,8 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover,
+.dropdown:hover .dropbtn {
   background-color: #090;
 }
 
@@ -124,7 +182,7 @@ li.dropdown {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -136,7 +194,9 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #00f100;}
+.dropdown-content a:hover {
+  background-color: #00f100;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -192,15 +252,15 @@ li.dropdown {
 }
 
 .general ul li ol li {
-  border-bottom:none;
+  border-bottom: none;
 }
 
 .general ul li ol li a {
-  color:darkgreen;
+  color: darkgreen;
 }
 
 .general ul li ol li a:hover {
-  color:white;
+  color: white;
 }
 
 .content {
@@ -244,7 +304,7 @@ details {
 
 .card {
   background-color: white;
-  width:100%;
+  width: 100%;
   border: none;
   border-radius: 5px;
   min-height: 220px;
@@ -254,7 +314,7 @@ details {
 
 .card-wide {
   background-color: white;
-  width:100%;
+  width: 100%;
   border: none;
   border-radius: 5px;
   margin: 5px 0px;
@@ -266,12 +326,14 @@ details {
 }
 
 .card-wide dl {
-  display:block;
+  display: block;
 }
 
 .card-wide-block dt {
   padding: 20px 0;
 }
+
+
 /*
 .card-wide-block dd ul {
   margin-left: -30px;
@@ -286,6 +348,7 @@ details {
   border-radius: 50%;
   text-align: center;
 }
+
 .card img {
   display: block;
   margin-left: auto;
@@ -293,6 +356,7 @@ details {
   max-width: 100%;
   height: auto;
 }
+
 #card-img {
   border: solid green;
   border-radius: 50%;
@@ -301,7 +365,8 @@ details {
   width: 80%;
   margin-bottom: 1em;
 }
-#img-div{
+
+#img-div {
   text-align: center
 }
 
@@ -334,7 +399,8 @@ figure {
   min-height: 120px;
 }
 
-#websites .card-block, #professional .card-block {
+#websites .card-block,
+#professional .card-block {
   background-image: url("../images/bg4.png");
   color: white;
   font-size: small;
@@ -347,27 +413,40 @@ figure {
   color: white;
 }
 
-#professional .card-block ul {
+#professional {
+  margin-top: -15px;
+  padding-bottom: 30px;
+}
+
+#cis ul,
+#cis2 ul,
+#agaseke ul,
+#cls ul {
   list-style: none;
   margin: 0 0 0 -30px;
 }
 
-#professional .card-block ul li ul {
-  list-style: square;
-  margin: 0 0 0 -30px;
+#cis ul li div ul,
+#cis2 ul li div ul,
+#agaseke ul li div ul,
+#cls ul li div ul {
+  list-style-type: square;
+  margin: 0;
 }
 
 dt {
-    font-style: italic;
-    font-weight: 600;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .aside {
   background-image: url("../images/bg.png");
   background-repeat: repeat;
+  margin-top: 0;
   padding: 0;
 }
-@media screen  and (max-width: 600px) {
+
+@media screen and (max-width: 600px) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
