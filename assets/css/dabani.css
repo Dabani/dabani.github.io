@@ -155,6 +155,11 @@ nav ul {
   background-color: #060;
 }
 
+nav ul li img {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
 li {
   float: left;
 }
