@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta name="msapplication-TileColor" content="#00a300">
   <meta name="theme-color" content="#ffffff">
   <title>MAKUTA Robert</title>
@@ -12,6 +12,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
   <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
   <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#00a300">
+  <!--
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  -->
+  <link rel="stylesheet" href="./assets/css/all.css">
   <link rel="stylesheet" href="./assets/css/dabani.css">
 </head>
 
@@ -21,9 +25,14 @@
       <img src="./assets/images/makuta-robert.png" alt="MAKUTA ROBERT">
     </div>
   </header>
-  <nav class="navbar">
+  <!--
+  <nav id="main_menu" class="navbar">
+    <div class="brand">
+      <a href="/">
+        <img src="./assets/images/favicon/android-chrome-192x192.png" alt="Dabani" />
+      </a>
+    </div>
     <ul>
-      <li><img src="./assets/images/favicon/favicon-32x32.png" alt="Dabani" /></li>
       <li><a href="#home">Home</a></li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">About</a>
@@ -42,6 +51,38 @@
       </li>
       <li><a href="#news">Blog</a></li>
     </ul>
+    <div id="menu">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+-->
+  <nav>
+    <ul class="menu">
+      <li class="logo"><a href="/"><img src="./assets/images/favicon/android-chrome-192x192.png" alt="Dabani" /></a></li>
+      <li class="item"><a href="#"><i class="fas fa-home"></i>Home</a></li>
+      <li class="item has-submenu">
+        <a tabindex="0"><i class="fas fa-tasks"></i>About</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#professional"><i class="fas fa-user-tie"></i>Work Experience</a></li>
+          <li class="subitem"><a href="#education"><i class="fas fa-chalkboard-teacher"></i>Education</a></li>
+          <li class="subitem"><a href="#training"><i class="fas fa-award"></i>Training</a></li>
+        </ul>
+      </li>
+      <li class="item has-submenu">
+        <a tabindex="0"><i class="fas fa-calendar-check"></i>Portfolio</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#websites"><i class="fas fa-globe"></i>Websites</a></li>
+          <li class="subitem"><a href="#logos"><i class="fas fa-paint-brush"></i>Logos</a></li>
+        </ul>
+      </li>
+      <li class="item"><a href="#"><i class="fas fa-blog"></i>Blog</a></li>
+      <li class="item"><a href="#"><i class="fas fa-address-card"></i>Contact</a></li>
+      <li class="item button"><a href="#"><i class="fas fa-sign-in-alt"></i>Log In</a></li>
+      <li class="item button secondary"><a href="#"><i class="fas fa-user-plus"></i>Sign Up</a></li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
   </nav>
   <main class="main">
     <div class="left col-3 col-s-4">
@@ -55,19 +96,19 @@
           <li>BSc Business Information Technology</li>
           <li>Systems Analyst & Web Designer</li>
           <li>
-            <h3>Names</h3>
+            <h3><i class="fas fa-user"></i>Names</h3>
             <ol>
               <li>MAKUTA Robert</li>
             </ol>
           </li>
           <li>
-            <h3>Nick Name</h3>
+            <h3><i class="fas fa-smile"></i>Nick Name</h3>
             <ol>
               <li>DABANI</li>
             </ol>
           </li>
           <li>
-            <h3>Skills</h3>
+            <h3><i class="fas fa-brain"></i> Skills</h3>
             <ol>
               <li>HTML, CSS </li>
               <li>Laravel, OctoberCMS, NodeJs, VueJs</li>
@@ -75,6 +116,7 @@
               <li>MySql, MongoDB, Firestore</li>
               <li>IntelliJ, Android-Studio, VS Code</li>
               <li>Git</li>
+              <li>CPanel, Webmail</li>
               <li>Adobe Photoshop, Adobe Illustrator</li>
               <li>Windows 10, Linux Ubuntu</li>
               <li>Microsoft Office 2013</li>
@@ -83,32 +125,32 @@
           <li>
             <h3>Contacts</h3>
             <ol class="contacts">
-              <li>Email: <a href="mailto:dabani.rm@gmail.com">dabani.rm@gmail.com</a><br />
+              <li><i class="fas fa-envelope"></i>Email: <a href="mailto:dabani.rm@gmail.com">dabani.rm@gmail.com</a><br />
                 <a href="mailto:robermaku@yahoo.fr">robertmaku@yahoo.fr</a>
               </li>
-              <li>Phone: <a href="tel:+250788554939">+250 788 554 939</a></li>
-              <li>Website: <a href="https://dabani.github.io">dabani.github.io</a></li>
+              <li><i class="fas fa-phone"></i>Phone: <a href="tel:+250788554939">+250 788 554 939</a></li>
+              <li><i class="fas fa-globe"></i>Website: <a href="https://dabani.github.io">dabani.github.io</a></li>
             </ol>
           </li>
           <li>
-            <h3>Social Media</h3>
+            <h3><i class="fas fa-share-alt"></i>Social Media</h3>
             <ol>
-              <li>Facebook :
+              <li><i class="fas fa-facebook-square"></i> Facebook :
                 <a href="https://web.facebook.com/robert.makuta/">@robert.makuta</a>
               </li>
-              <li>Twitter :
+              <li><i class="fas fa-twitter"></i>Twitter :
                 <a href="https://twitter.com/Kamugwe">@Kamugwe</a>
               </li>
-              <li>LinkedIn:
+              <li><i class="fas fa-linkedin"></i>LinkedIn:
                 <a href="https://www.linkedin.com/in/robert-makuta-b8b12525/">@robert-makuta-b8b12525</a>
               </li>
-              <li>Github :
+              <li><i class="fas fa-github"></i>Github :
                 <a href="https://github.com/Dabani">@Dabani</a>
               </li>
             </ol>
           </li>
           <li>
-            <h3>Language</h3>
+            <h3><i class="fas fa-language"></i>Language</h3>
             <ol>
               <li>English</li>
               <li>French</li>
@@ -117,14 +159,14 @@
             </ol>
           </li>
           <li>
-            <h3>Hobbies</h3>
+            <h3><i class="fas fa-puzzle-piece"></i>Hobbies</h3>
             <ol>
-              <li>Programming</li>
-              <li>Reading</li>
-              <li>Watching TV (News, Sports, Movies)</li>
-              <li>Internet research</li>
-              <li>Sports: Walking, Football</li>
-              <li>Music</li>
+              <li><i class="fas fa-code"></i>Programming</li>
+              <li><i class="fas fa-book-reader"></i>Reading</li>
+              <li><i class="fas fa-tv"></i>Watching TV (News, Sports, Movies)</li>
+              <li><i class="fas fa-search"></i>Internet research</li>
+              <li><i class="fas fa-running"></i>Sports: Walking, Football</li>
+              <li><i class="fas fa-music"></i>Music</li>
             </ol>
           </li>
         </ul>
@@ -134,7 +176,7 @@
       <section id="curriculum-vitae">
         <article class="content" id="professional">
           <header>
-            <h2>Professional Experience</h2>
+            <h2><i class="fas fa-user-md"></i>Professional Experience</h2>
           </header>
           <details open>
             <div id="cis" class="card-wide">
@@ -318,7 +360,7 @@
         </article>
         <article class="content" id="education">
           <header>
-            <h2>Education</h2>
+            <h2><i class="fas fa-graduation-cap"></i>Education</h2>
           </header>
           <details open>
             <div id="mku" class="card-wide">
@@ -375,7 +417,7 @@
         </article>
         <article class="content" id="training">
           <header>
-            <h2>Training</h2>
+            <h2><i class="fas fa-award"></i>Training</h2>
           </header>
           <details open>
             <div id="ux-challenge" class="card-wide">
@@ -414,7 +456,7 @@
       <section id="portfolio">
         <article class="content" id="websites">
           <header>
-            <h2>Websites Design</h2>
+            <h2><i class="fas fa-laptop-code"></i>Websites Design</h2>
           </header>
           <p class="description">
             The websites below have been developed using various technology, some have been developed using PHP from scratch, others using frameworks like Laravel and Bootstrap, others using Content Management System such as October CMS, Microweber, etc. <br>
@@ -586,7 +628,7 @@
         </article>
         <article class="content" id="logos">
           <header>
-            <h2>Logos Design</h2>
+            <h2><i class="fas fa-paint-brush"></i>Logos Design</h2>
           </header>
           <p class="description">
             All of the logos below have been designed for real companies, organizations while some of them are designed for fun! Nobody can use them without the authorization of the author!
@@ -705,7 +747,7 @@
     <div class="aside col-3 col-s-12">
       <article class="content" id="training">
         <header>
-          <h2>Volunteering & Initiatives</h2>
+          <h2><i class="fas fa-hands-helping"></i>Volunteering & Initiatives</h2>
         </header>
         <details open>
           <div id="pssv" class="card-wide">
