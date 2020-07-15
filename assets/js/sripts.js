@@ -37,6 +37,7 @@ function closeSubmenu(e) {
     menu.querySelector(".submenu-active").classList.remove("submenu-active");
   }
 }
+
 /* Event Listeners */
 toggle.addEventListener("click", toggleMenu, false);
 for (let item of items) {

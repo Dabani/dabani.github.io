@@ -51,16 +51,18 @@ header {
 
 [class*="col-"] {
   width: 100%;
+  padding: 0;
+  margin-top: 1em;
+  margin-top: 1em;
 }
 
 @media only screen and (max-width: 599) {
-  #professional {
-    margin-top: 1em;
-    padding-bottom: 1.9em;
-  }
   .right,
   .aside {
-    margin: 1em;
+    margin: -1em;
+  }
+  .left {
+    margin-top: 0;
   }
 }
 
@@ -104,6 +106,22 @@ header {
   }
   .aside {
     margin: 1.25em 0;
+  }
+  #professional {
+    margin-top: -1em;
+    padding-bottom: 1.9em;
+  }
+  .right,
+  .left {
+    padding: 1em;
+  }
+  .left,
+  .right,
+  .aside {
+    margin: 0;
+  }
+  .right {
+    padding-right: 0;
   }
 }
 
@@ -154,6 +172,11 @@ header {
 /* Basic styling */
 
 nav {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: #060;
   padding: 0 1em;
   height: 3.5em;
@@ -202,6 +225,14 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 599px) {
+  ul.menu.active {
+    width: 50%;
+    background-color: #050;
+    text-align: left;
+  }
 }
 
 .menu li a {
@@ -324,13 +355,6 @@ a {
 /* Desktop menu */
 
 @media all and (min-width: 960px) {
-  nav {
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
   .menu {
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -376,6 +400,7 @@ a {
   background-image: url("../images/bg.png");
   background-repeat: repeat; */
   background-color: white;
+  margin-bottom: 1em;
 }
 
 .photo {
@@ -447,6 +472,7 @@ article header {
 article h2 {
   margin-top: 3em;
   font-size: 2.5em;
+  line-height: normal;
   color: darkgreen;
 }
 
@@ -482,7 +508,6 @@ details {
   border: none;
   border-radius: 0.3em;
   margin: 0.3em 0;
-  /* position: relative; */
 }
 
 .card-wide-block {
@@ -567,11 +592,6 @@ figure {
   color: white;
 }
 
-#professional {
-  margin-top: -1em;
-  padding-bottom: 1.9em;
-}
-
 #cis ul,
 #cis2 ul,
 #agaseke ul,
@@ -600,7 +620,7 @@ dt {
   padding: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
