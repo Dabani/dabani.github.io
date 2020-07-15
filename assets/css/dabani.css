@@ -11,7 +11,7 @@ body {
 
 .top {
   background-image: url("../images/bg.png");
-  padding: 20px;
+  padding: 1.25em;
 }
 
 .top img {
@@ -27,12 +27,12 @@ body {
 
 [class*="col-"] {
   float: left;
-  padding: 15px;
+  padding: 1em;
 }
 
 html {
   font-family: "Lucida Sans", sans-serif;
-  line-height: 26px;
+  line-height: 1.625em;
 }
 
 header {
@@ -43,7 +43,7 @@ header {
 .header {
   background-color: green;
   color: #ffffff;
-  padding: 15px;
+  padding: 1em;
 }
 
 
@@ -92,7 +92,7 @@ header {
     width: 100%;
   }
   .aside {
-    margin: 20px 0;
+    margin: 1.25em 0;
   }
 }
 
@@ -139,10 +139,12 @@ header {
 
 /* Responsive menu */
 
+
 /* Basic styling */
+
 nav {
   background: #060;
-  padding: 0 15px;
+  padding: 0 1em;
   height: 3.5em;
 }
 
@@ -152,10 +154,11 @@ a {
 }
 
 .fas {
-  margin-right: 10px;
+  margin-right: 0.625em;
 }
 
-.menu, .submenu {
+.menu,
+.submenu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -164,82 +167,103 @@ a {
 .logo img {
   margin-top: -0.75em;
   padding: 0;
-  height: 45px;
+  height: 2.8em;
 }
 
 .item {
-  padding: 0 10px;
+  padding: 0 0.625em;
 }
 
 .item.button {
-  padding: 0 5px;
+  padding: 0 0.3em;
 }
 
-.item:not(.button) a:hover, .item a:hover::after {
+.item:not(.button) a:hover,
+.item a:hover::after {
   color: #0c0;
 }
+
+
 /* Mobile menu */
+
 .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
+
 .menu li a {
   display: block;
-  padding: 15px;
+  padding: 1em;
 }
+
 .menu li.subitem a {
-  padding: 15px;
+  padding: 1em;
 }
+
 .toggle {
   order: 1;
-  font-size: 20px;
+  font-size: 1.25em;
 }
+
 .item.button {
   order: 2;
 }
+
 .item {
   order: 3;
   width: 100%;
   text-align: center;
   display: none;
 }
+
 .active .item {
   display: block;
 }
+
 .button.secondary {
   /* divider between buttons and menu links */
   border-bottom: 1px #040 solid;
 }
+
+
 /* Submenu up from mobile screens */
+
 .submenu {
   display: none;
 }
+
 .submenu-active .submenu {
   display: block;
 }
+
 .has-submenu i {
-  font-size: 12px;
+  font-size: 0.75em;
 }
-.has-submenu > a::after {
+
+.has-submenu>a::after {
   font-family: "Font Awesome 5 Free";
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75em;
+  line-height: 1em;
   font-weight: 900;
   content: "\f078";
   color: white;
-  padding-left: 5px;
-}
-.subitem a {
-  padding: 10px 15px;
-}
-.submenu-active {
-  background-color: #050;
-  border-radius: 3px;
+  padding-left: 0.3em;
 }
 
+.subitem a {
+  padding: 0.625em 1em;
+}
+
+.submenu-active {
+  background-color: #050;
+  border-radius: 0.2em;
+}
+
+
 /* Tablet menu */
+
 @media all and (min-width: 600px) {
   .menu {
     justify-content: center;
@@ -259,11 +283,11 @@ a {
   }
   /* Button up from tablet screen */
   .menu li.button a {
-    padding: 10px 15px;
-    margin: 5px 0;
+    padding: 0.625em 1em;
+    margin: 0.3em 0;
   }
   .submenu-active {
-      background-color: #050;
+    background-color: #050;
   }
   .button a {
     background: #00ff80;
@@ -284,7 +308,10 @@ a {
     border-color: darkgreen;
   }
 }
+
+
 /* Desktop menu */
+
 @media all and (min-width: 960px) {
   nav {
     position: -webkit-sticky;
@@ -314,7 +341,7 @@ a {
     display: block;
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 3.125em;
     background: #00a300;
   }
   .toggle {
@@ -325,14 +352,15 @@ a {
   }
 }
 
+
 /* End responsive menu */
 
 .main {
-  padding: 15px;
+  padding: 1em;
 }
 
 .left {
-  padding: 15px;
+  padding: 1em;
   /*
   background-image: url("../images/bg.png");
   background-repeat: repeat; */
@@ -341,38 +369,38 @@ a {
 
 .photo {
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  border-radius: 20px;
+  border-radius: 1.25em;
 }
 
 .photo img {
   width: 100%;
   height: auto;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 1.25em;
+  border-top-left-radius: 1.25em;
 }
 
 .general {
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 
 .general ul {
   list-style: none;
-  margin: 0 0 0 -30px;
+  margin: 0 0 0 -1.9em;
 }
 
 .general ul li {
   display: inline-block;
   text-decoration: none;
   width: 100%;
-  padding: 5px;
+  padding: 0.25em;
   border-bottom: 1px dotted green;
 }
 
 .general ul li ol {
   list-style: none;
-  margin: 0 0 0 -30px;
+  margin: 0 0 0 -1.9em;
   font-size: small;
 }
 
@@ -390,8 +418,8 @@ a {
 
 .content {
   background-color: white;
-  padding: 0 30px;
-  margin-bottom: 15px;
+  padding: 0 1.9em;
+  margin-bottom: 1em;
 }
 
 article {
@@ -400,41 +428,41 @@ article {
 
 article header {
   background-color: lightgreen;
-  margin-left: -30px;
-  margin-right: -30px;
-  padding: 2px 20px;
+  margin-left: -1.9em;
+  margin-right: -1.9em;
+  padding: 0.125em 1.25em;
 }
 
 article h2 {
-  margin-top: 60px;
-  font-size: 40px;
-  line-height: 40px;
+  margin-top: 3.8em;
+  font-size: 2.5em;
+  line-height: 2.5em;
   color: darkgreen;
 }
 
 details {
-  margin: 15px 0;
+  margin: 1em 0;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px 15px;
+  grid-gap: 0.625em 1em;
 }
 
 #contact>.container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 10px 15px;
+  grid-gap: 0.625em 1em;
 }
 
 .card {
   background-color: white;
   width: 100%;
   border: none;
-  border-radius: 5px;
-  min-height: 220px;
-  margin: 5px 0px;
+  border-radius: 0.3em;
+  min-height: 13.75em;
+  margin: 0.3em 0;
   position: relative;
 }
 
@@ -442,8 +470,8 @@ details {
   background-color: white;
   width: 100%;
   border: none;
-  border-radius: 5px;
-  margin: 5px 0px;
+  border-radius: 0.3em;
+  margin: 0.3em 0;
   /* position: relative; */
 }
 
@@ -456,18 +484,8 @@ details {
 }
 
 .card-wide-block dt {
-  padding: 20px 0;
+  padding: 1.25em 0;
 }
-
-
-/*
-.card-wide-block dd ul {
-  margin-left: -30px;
-}
-
-.card-wide-block dd ul li {
-  margin-left: -15px;
-} */
 
 #image {
   border: solid darkgreen;
@@ -503,26 +521,26 @@ figure {
 
 .card-title {
   background-color: hsl(120, 75%, 75%);
-  padding: 10px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  padding: 0.625em;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
 }
 
 .card-footer {
   background-color: hsl(120, 75%, 75%);
-  padding: 10px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  padding: 0.625em;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   right: 0;
 }
 
 .card-block {
   background-image: url("../images/bg.png");
-  padding: 5px;
-  min-height: 120px;
+  padding: 0.3em;
+  min-height: 7.5em;
 }
 
 #websites .card-block,
@@ -530,8 +548,8 @@ figure {
   background-image: url("../images/bg4.png");
   color: white;
   font-size: small;
-  padding: 5px;
-  min-height: 120px;
+  padding: 0.3em;
+  min-height: 7.5em;
 }
 
 #websites .card-block a {
@@ -540,8 +558,8 @@ figure {
 }
 
 #professional {
-  margin-top: -15px;
-  padding-bottom: 30px;
+  margin-top: -1em;
+  padding-bottom: 1.9em;
 }
 
 #cis ul,
@@ -549,7 +567,7 @@ figure {
 #agaseke ul,
 #cls ul {
   list-style: none;
-  margin: 0 0 0 -30px;
+  margin: 0 0 0 -1.9em;
 }
 
 #cis ul li div ul,
